@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metradar"
+version = "0.1.8"
+authors = [
+    { name = "Wenjian Zhu", email = "kevin2075@163.com" }
+]
+description = "radar data processing"
+
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Operating System :: Unix",
+    "Operating System :: Microsoft",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Hydrology",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+
+keywords = ["Weather", "Radar", ]
+
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pydda==2.2.0",
+    "tqdm>=4.67.0",
+    "wradlib>=2.6.1",
+    "MetPy>=1.7.1",
+    "matplotlib>=3.10.8",
+    "pysteps>=1.19.0",
+    "nmc_met_io>=0.1.15.0",
+    "netCDF4>=1.7.4",
+    "schedule>=1.2.2",
+]
+
+requires-python = ">=3.10,<3.13"
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+include = ["metradar*",]
+exclude = ["cfg","resources","test*","private_res","tlogp","*.txt","output","pic",".metradar"]
