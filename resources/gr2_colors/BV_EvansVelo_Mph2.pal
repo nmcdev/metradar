@@ -1,0 +1,22 @@
+product: BV
+units: M/S
+step: 5
+
+color: -35 0 0 160
+color: -30 0 224 255
+color: -25 0 255 225
+color: -20 160 255 208
+color: -15 0 255 0
+color: -10 16 96 16
+color: -5 16 96 16
+color: -1 112 128 112
+color: 1 144 128 144 
+color: 5 112 0 0
+color: 10 255 0 0
+color: 15 255 0 128
+color: 20 255 0 144
+color: 25 255 196 255
+color: 30 255 96 0 
+color: 35 255 255 0
+
+RF: 128 0 208

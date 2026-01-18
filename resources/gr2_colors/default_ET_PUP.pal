@@ -1,0 +1,27 @@
+;====================================================================
+;
+; ECHO TOP color table
+;
+;
+
+Product: ET
+Units:   KM
+Step:    1
+ 
+Color:  21   231   0   255  
+Color:  20   255   255    255  
+Color:  18   255   0   0  
+Color:  17   174   0     0   
+Color:  15   255   255   0   
+Color:  14  254   191   0  
+Color:  12   0   239   0     
+Color:  11   0   187   0    
+Color:  9   0   251   144  
+Color:  8   50    0   150  
+Color:  6   0     144   204    
+Color:  5   0   176   255  
+Color:  3    0    224    255    
+Color:  2    118   118   118  
+
+
+

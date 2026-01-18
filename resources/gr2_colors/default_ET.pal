@@ -1,0 +1,21 @@
+;====================================================================
+;
+; Default GRS Echo Tops color table
+;
+;   Internal units are in kilometers (KM) so we use the Scale:
+;   statement to let the program know that the values in this
+;   table are in thousands of feet (KFT)
+;
+
+Product: ET
+Units:   KFT
+Step:    10
+Scale:   3.281      ; convert internal units (KM) to KFT
+
+Color: 10    0 200 255     0  64 128
+Color: 20    0 255 200     0 128 100
+Color: 30  245 245   0   180 128   0
+Color: 40  255 128   0   128  64   0
+Color: 50  230   0   0   128   0   0
+Color: 60  255   0 255   128   0 128
+Color: 70  255 255 255

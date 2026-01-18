@@ -1,0 +1,24 @@
+;====================================================================
+;
+; Default GRS MEHS color table
+;
+;   Internal units are in millimeters (MM) so we use
+;   the Scale: statement to indicate that the values
+;   in this table are in inches
+;
+
+Product:  MEHS
+Units:    INCH
+Step:     0.25
+Decimals: 2
+Scale:    0.03937   ; convert internal units (MM) to INCHES
+
+
+Color:  0.25     0   200  255      0  100  128
+Color:  0.50     0   255  200      0  128  100
+Color:  0.75   255   255    0    180  128    0
+Color:  1.00   255   128    0    128   64    0
+Color:  2.00   255     0  255    128    0  128
+Color:  3.00   128   128  128    255  255  255
+Color:  5.00   255   255  255
+

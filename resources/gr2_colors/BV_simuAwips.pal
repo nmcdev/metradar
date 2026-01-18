@@ -1,0 +1,20 @@
+product: BV
+units: KTS
+step: 10
+
+color: 0 180 180 180
+color: -10 83 156 83
+color: -20 0 113 0
+color: -45 0 255 0
+color: -55 144 255 153
+color: -65 0 255 235
+color: -100 0 155 155
+color: -120 0 0 0
+
+color: 10 135 69 88
+color: 20 119 0 0
+color: 45 255 0 0
+color: 55 255 128 0
+color: 65 255 255 0
+color: 100 190 190 0
+color: 120 0 0 0

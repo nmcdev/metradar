@@ -1,0 +1,13 @@
+;-----------------------------------------------------
+;  Depth Visible Color Table
+;  almanydesigns.com/grx
+
+
+Product: VIS
+Units: K
+Step: 16
+
+Color4:  330   255 255 255   255
+Color4:  245   255 255 255   255
+Color4:   30    0   0   0   255
+Color4:    0     0   0   0     0

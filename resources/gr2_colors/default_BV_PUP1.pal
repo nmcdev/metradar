@@ -1,0 +1,33 @@
+;====================================================================
+;
+; Default GRS Base Velocity color table
+;
+;   Internal units are in meters/second (M/S) so we use
+;   the Scale: statement to let GR3 know that the values
+;   in this table are in knots (KTS)
+;
+;
+
+Product: BV
+Units:   m/s
+Step:    5
+Scale:   1    ; converts internal units (M/S) to KTS
+
+RF: 124  0  124
+
+Color:   35    254    254   0    254    254   0
+Color:   27    254    254   0    254    254   0
+Color:   20    254    210   0    254    210   0
+Color:   15    254    124   0    254    124   0
+Color:   10    254    176   176   254    176   176
+Color:   5     254    88    88    254    88    88
+Color:   1     254    0     0   254    0     0
+Color:    0    252   252   252   252   252   252
+Color:  -1     252   252   252   252   252   252
+Color:  -5     0     128   0    0     128   0
+Color:  -10    0     196   0   0     196   0
+Color:  -15    0    254   0    0    254   0
+Color:  -20    0   176   176   0   176   176
+Color:  -27    0   224  254    0   224  254
+Color:  -35    126   224  254   126   224  254
+

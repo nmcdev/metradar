@@ -1,0 +1,16 @@
+;-----------------------------------------------------
+;  Dark Infrared Color Table
+;  almanydesigns.com/grx
+
+Product: IR
+Units: C
+Step:  20
+
+Color:   50    0   0   0   
+Color:  -30    238 238 238   
+Color:  -51    65 100 126 229 231 232
+Color:  -58     0   0  42   52  88 117
+Color:  -70    187  53  9  234 231  42
+Color:  -79     58   0  0  140   0   0
+Color:  -83    238 238 238 112   0 138
+Color:  -90    238 238 238 238 238 238

@@ -1,0 +1,30 @@
+;====================================================================
+;
+; Default GRS CC/RHO color table
+;
+;
+
+Product:  CC
+Units:    %
+Scale:    100
+Step:     5
+
+
+
+Color: 101     124 0 124
+Color:  99     212 0   170
+Color:  98     193 0   0
+Color:  97     255 31  0
+Color:  96     255 114 0
+Color:  95     255 165 0
+Color:  94     255 198 0
+Color:  92     255 240 0
+Color:  90     255 255 59
+Color:  85     0  255 0
+Color:  80     0  218 13
+Color:  70     0  183 41
+Color:  60     0  137 56
+Color:  50     0  131 125
+Color:  30     0  186 191
+Color:  10     0  239 239
+Color:  0      0  60 255

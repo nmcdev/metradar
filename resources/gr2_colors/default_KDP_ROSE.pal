@@ -1,0 +1,23 @@
+
+Product:   KDP
+Units:     deg/km
+Decimals:  1
+Step:      0.5
+
+
+Color:  20     255  0    255
+Color:  7      187  0    58
+Color:  3.1    242  15   0
+Color:  2.4    255  94   0
+Color:  1.7    255  152  0
+Color:  1.1    255  188  0
+Color:  0.75   255  230  0
+Color:  0.5    255  255  30
+Color:  0.33   36   255  36
+Color:  0.22   0    232  10
+Color:  0.15   0    192  39
+Color:  0.1    180  180  180
+Color:  -0.1   180  180  180   
+Color:  -0.2   0    168  172
+Color:  -0.4   0    239  239
+Color:  -0.8   0    255  255

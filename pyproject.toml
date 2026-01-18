@@ -49,4 +49,4 @@ license-files = ["LICENSE"]
 
 [tool.setuptools.packages.find]
 include = ["metradar*",]
-exclude = ["cfg","resources","test*","private_res","tlogp","*.txt","output","pic",".metradar",]
+exclude = ["cfg","test*","private_res","tlogp","*.txt","output","pic",".metradar","国省市县审图号(GS (2019) 3082号","DEM","maps"]

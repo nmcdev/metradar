@@ -1,0 +1,22 @@
+;====================================================================
+;
+; Default GRS Storm Relative Velocity color table
+;
+;   Internal units are in meters/second (M/S) so we use the
+;   Scale: statement to let the program know that the values
+;   in this table are in knots (KTS)
+;
+
+
+Product: SRV
+Units:   KTS
+Step:    10
+Scale:   1.9426     ; converts internal units (M/S) to KTS
+
+RF:  64  0  64
+
+Color:   70   255   0   0 
+Color:   40   192   0   0     255   0   0
+Color:    0   128  64  64     255 128 128
+Color:  -40    96 192 128      48  96  96
+Color:  -70     0 255   0       0 160   0

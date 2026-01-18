@@ -1,0 +1,16 @@
+;
+; Default GRS POSH color table
+;
+
+Product: POSH
+Units:   %
+Step:    10
+
+Color:  30     0  200  255      0  100  128
+Color:  50     0  255  200      0  128  100
+Color:  60   255  255    0    180  128    0
+Color:  70   255  128    0    128   64    0
+Color:  80   255    0  255    128    0  128
+Color:  90   128  128  128    255  255  255
+Color: 100   255  255  255
+

@@ -1,0 +1,13 @@
+;-----------------------------------------------------
+;  Transparent Visible Color Table
+;  almanydesigns.com/grx
+
+Product: VIS
+Units: K
+Step: 16
+
+Color: 200  255  255  255 
+Color: 130 200 200 200 
+Color4: 80 75 75 75 30 
+Color4: 60 65 65 65 0  
+Color4: 0  0   0   0   0
