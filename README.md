@@ -139,3 +139,8 @@ https://www.bilibili.com/video/BV1d2zCB7E1R?spm_id_from=333.788.videopod.section
 
 Good Luck！
 
+### 如果下载离线安装环境，在还原的过程中，出现类似下面的提示：
+PS C:\Users\xxx\anaconda3\envs\radar312_win\Scripts> .\conda-unpack.exe
+SyntaxError: Non-UTF-8 code starting with '\xcb' in file \\?\C:\Users\xxx\anaconda3\envs\radar312_win\Scripts\conda-unpack-script.py on line 655, but no encoding declared; see https://peps.python.org/pep-0263/ for details
+
+具体解决方案如下，将解压后的\C:\Users\xxx\anaconda3\envs\radar312_win\Scripts\conda-unpack-script.py脚本在VScode编辑器下用GBK编码方式打开，然后把# -*- coding: utf-8 -*- 添加到该conda-unpack-script.py文件的最前面，然后用utf-8编码进行保存即可。再用conda-unpack.exe命令，就可以正常了。
