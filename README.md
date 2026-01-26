@@ -55,15 +55,9 @@ RESOURCES_PATH = /home/wjzhu/metradar/resources
 
 ## 🚀补充材料：
 ### * 方便国内用户安装和使用的补充材料如下：
-为了方便大家尽快上手metradar，将完整的python运行环境打包共享了（包括Linux系统和Windows系统的），从下面的夸克网盘或百度网盘下载即可。下载后，至于如何使用，请问AI智能体“如何用conda unpack命令还原用conda pack打包的虚拟环境”，你会得到详细的指南。此外，地图文件，测试数据等也可以从下面对应链接获取。如果下载离线包安装后依然无法正常使用，可能是操作系统和离线包不匹配，此时，建议手动安装各个包，具体指南见最后面的说明。
+安装前，建议将pip源设置为阿里云的，将conda源设置为清华的，具体详情咨询AI即可。此外，地图文件，测试数据等也可以从下面对应链接获取。
 
 ======================夸克网盘链接如下===========
-
-Linux（Ubuntu22.04）上metradar完整版python运行环境离线包radar312_env.tar.gz
-链接：https://pan.quark.cn/s/e7f7e4e3c268
-
-Windows11上metradar完整版python运行环境离线包radar312_win.tar.gz
-链接：https://pan.quark.cn/s/cec100cc4898
 
 样例测试数据metradar_testdata
 链接：https://pan.quark.cn/s/c756f461c7d8
@@ -76,13 +70,6 @@ metradar地图文件.zip
 
 =================百度网盘链接如下==========
 
-Linux（Ubuntu22.04）上metradar完整版python运行环境离线包radar312_env.tar.gz
-链接：https://pan.baidu.com/s/18nqi-LxJoaXGiLWYITj6lQ?pwd=5wew 
-提取码：5wew
-
-Windows11上metradar完整版python运行环境离线包radar312_win.tar.gz
-链接: https://pan.baidu.com/s/1TRaTvXq5xTz38atFnUa4gw?pwd=8vvg 提取码: 8vvg 
-
 metradar工具包介绍.pptx
 链接：https://pan.baidu.com/s/1Rfzo3zGu23hl4uvWPvsl9g?pwd=5wew 
 提取码：5wew
@@ -94,20 +81,6 @@ metradar地图文件.zip
 样例测试数据metradar_testdata
 链接：https://pan.baidu.com/s/1cYUHGL6Cqk4rK5uZCXrUWg?pwd=5wew 
 提取码：5wew
-
-==============手动逐个包安装运行环境步骤：===========
-
-首先，如果是Windows，安装anaconda软件  ，然后通过conda prompt命令行工具启动dos窗口；如果是Linux，可安装miniconda即可，然后确保conda初始化成功，如果conda没安装好，请寻求AI的帮助和指导。一切就绪之后，然后依次执行下面的命令行：
-
-* conda create -n radar312 python=3.12 -y
-* conda activate radar312 
-* pip install metradar
-* conda install -c conda-forge pysteps
-* conda install -c conda-forge arm_pyart -y
-* conda install -c conda-forge gdal -y
-* pip install tensorflow
-* pip install tensorflow-probability
-* pip install tf_keras
 
 ### 👇适合新手的保姆级材料来了，主要内容是：1，共享了miniconda的安装文件；2，上传了完整的安装视频。链接如下：
 
@@ -138,9 +111,3 @@ Windows下安装metradar的视频：
 https://www.bilibili.com/video/BV1d2zCB7E1R?spm_id_from=333.788.videopod.sections
 
 Good Luck！
-
-### 如果下载离线安装环境，在还原的过程中，出现类似下面的提示：
-PS C:\Users\xxx\anaconda3\envs\radar312_win\Scripts> .\conda-unpack.exe
-SyntaxError: Non-UTF-8 code starting with '\xcb' in file \\?\C:\Users\xxx\anaconda3\envs\radar312_win\Scripts\conda-unpack-script.py on line 655, but no encoding declared; see https://peps.python.org/pep-0263/ for details
-
-具体解决方案如下，将解压后的\C:\Users\xxx\anaconda3\envs\radar312_win\Scripts\conda-unpack-script.py脚本在VScode编辑器下用GBK编码方式打开，然后把# -*- coding: utf-8 -*- 添加到该conda-unpack-script.py文件的最前面，然后用utf-8编码进行保存即可。再用conda-unpack.exe命令，就可以正常了。

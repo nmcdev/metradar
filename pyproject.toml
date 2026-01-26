@@ -31,15 +31,15 @@ keywords = ["Weather", "Radar", ]
 
 dependencies = [
     "openpyxl>=3.1.5",
-    "pydda==2.2.0",
+    "pydda>=2.2.0",
     "tqdm>=4.67.0",
     "wradlib>=2.6.1",
     "MetPy>=1.7.1",
     "matplotlib>=3.10.8",
-    "nmc_met_io>=0.1.15.0",
+    "nmc_met_io>=0.1.16.0",
     "netCDF4>=1.7.4",
     "schedule>=1.2.2",
-    "nmc_met_graphics>=0.1.5.4",
+    "nmc_met_graphics>=0.2.0",
 ]
 
 requires-python = ">=3.10,<3.13"
