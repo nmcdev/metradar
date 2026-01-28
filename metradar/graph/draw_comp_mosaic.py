@@ -265,10 +265,19 @@ def draw_composite_operational(gridfile,outpath='.',level=4,vmin=0,vmax=75,color
         # cmap=outdic['cmap']
         # norm=outdic['norm']
 
-    display.plot_grid(field, level, vmin=vmin, vmax=vmax,
-                    ax=ax_main,colorbar_flag=False,title_flag=False,
-                    projection=projection,axislabels_flag=False,title=None,
-                    cmap=cmap,norm=norm)
+    # display.plot_grid(field, level, vmin=vmin, vmax=vmax,
+    #                 ax=ax_main,colorbar_flag=False,title_flag=False,
+    #                 projection=projection,axislabels_flag=False,title=None,
+    #                 cmap=cmap,norm=norm)
+    ds = grid.to_xarray()
+    ds[field][0, level].plot.pcolormesh(
+            x="lon",
+            y="lat",
+            cmap=cmap,
+            vmin=vmin,
+            vmax=vmax,
+            add_colorbar=False,
+        )
     add_china_map_2cartopy(ax_main, name='province', facecolor='none',edgecolor=None, lw=1)
     draw_gisinfo(ax_main,slat=ylim_south,nlat=ylim_north,wlon=xlim_west,elon=xlim_east)
     
