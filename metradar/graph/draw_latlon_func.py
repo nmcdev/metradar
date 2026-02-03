@@ -337,6 +337,8 @@ def draw_latlon(data,lat,lon,slat=None,nlat=None,wlon=None,elon=None,outpath=Non
             fig.savefig(outpath + os.sep  + outname, bbox_inches="tight",transparent=False, dpi=dpi,)
         
         print(outpath + os.sep + outname + ' saved!')
+    # 关闭图形
+    plt.close()
     
 
 def draw_single(param):
