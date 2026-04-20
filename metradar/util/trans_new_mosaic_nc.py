@@ -174,10 +174,10 @@ def decode_mosaic(filepath,filename,minv=10,maxv = 80):
 	data=data.astype('float')
 	# data[data == -32768] = np.NAN #  空白
 	# data[data == -1280] = np.NAN # 有覆盖但无数据
-	data[data < -300] = np.NAN
+	data[data < -300] = np.nan
 	data = np.flipud(data)/dic_gh['scale']
-	data[data < int(minv)] = np.NAN
-	data[data > int(maxv)] = np.NAN
+	data[data < int(minv)] = np.nan
+	data[data > int(maxv)] = np.nan
 
 	# set longitude and latitude coordinates
 	lat = dic_gh['edge_s']/1000 + np.arange(dic_gh['nY'])*dic_gh['dy']/10000

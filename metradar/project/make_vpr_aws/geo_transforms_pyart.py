@@ -14,8 +14,6 @@ try:
 except ImportError:
     _PYPROJ_AVAILABLE = False
 
-from exceptions import MissingOptionalDependency
-
 PI = np.pi
 
 
@@ -373,10 +371,7 @@ def geographic_to_cartesian(lon, lat, projparams):
         # Use pyproj for the projection
         # check that pyproj is available
         if not _PYPROJ_AVAILABLE:
-            raise MissingOptionalDependency(
-                "PyProj is required to use geographic_to_cartesian "
-                "with a projection other than pyart_aeqd but it is not "
-                "installed")
+            raise RuntimeError("PyProj is required to use geographic_to_cartesian with a projection other than pyart_aeqd but it is not installed")
         proj = pyproj.Proj(projparams)
         x, y = proj(lon, lat, inverse=False)
     return x, y
@@ -499,10 +494,7 @@ def cartesian_to_geographic(x, y, projparams):
         # Use pyproj for the projection
         # check that pyproj is available
         if not _PYPROJ_AVAILABLE:
-            raise MissingOptionalDependency(
-                "PyProj is required to use cartesian_to_geographic "
-                "with a projection other than pyart_aeqd but it is not "
-                "installed")
+            raise RuntimeError("PyProj is required to use cartesian_to_geographic with a projection other than pyart_aeqd but it is not installed")
         proj = pyproj.Proj(projparams)
         lon, lat = proj(x, y, inverse=True)
     return lon, lat

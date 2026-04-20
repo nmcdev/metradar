@@ -9,7 +9,7 @@ from nmc_met_io.retrieve_cmadaas import cmadaas_sounding_by_time
 from nmc_met_io.retrieve_cmadaas import cmadaas_radar_level2_by_timerange_and_id
 
 import pandas as pd
-import geo_transforms_pyart as geotrans
+from metradar.project.make_vpr_aws import geo_transforms_pyart as geotrans
 import math
 import numpy as np
 import os
